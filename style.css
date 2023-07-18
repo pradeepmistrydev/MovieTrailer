@@ -308,6 +308,10 @@ iframe.embed-responsive-item {
     cursor: pointer;
 }
 
+.close_icon {
+    display: none;
+}
+
 /* responsive */
 @media(max-width:992px) {
     nav .nav_menu {
@@ -339,8 +343,18 @@ iframe.embed-responsive-item {
         color: white;
         position: absolute;
         top: 11px;
-        right: 10px;
+        right: 20px;
         width: 25px;
+    }
+
+    .close_icon {
+        display: flex;
+        margin-left: auto;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 21px;
+        width: 18px;
     }
 
     nav .nav_menu li:hover {
@@ -351,6 +365,10 @@ iframe.embed-responsive-item {
 
 @media(min-width:992px) {
     .toggler {
+        display: none;
+    }
+
+    .close_icon {
         display: none;
     }
 }

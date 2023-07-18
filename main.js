@@ -12,7 +12,14 @@ $('.feedback_rating p').hover(function () {
 
 
 //for hamburger menu
-
+$('.close_icon').hide();
 $('.toggler').click(function () {
-    $('.nav_menu').toggle();
+    $('.nav_menu').show();
+    $(this).hide();
+    $('.close_icon').show();
+})
+$('.close_icon').click(function () {
+    $('.nav_menu').hide();
+    $(this).hide();
+    $('.toggler').show();
 })
