@@ -136,6 +136,16 @@ nav .nav_menu li a:hover {
     margin-bottom: 10px;
 }
 
+button.btn-close {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1;
+}
+
 .nav_menu li.active a {
     color: var(--red);
     border-bottom: 1px solid var(--red);
@@ -166,6 +176,8 @@ nav .nav_menu li a:hover {
     background: transparent;
     padding: 7px 10px;
     margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
 }
 
 .checked {
@@ -311,6 +323,11 @@ iframe.embed-responsive-item {
 .close_icon {
     display: none;
 }
+
+.modal-backdrop {
+    z-index: -1;
+}
+
 
 /* responsive */
 @media(max-width:992px) {
