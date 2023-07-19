@@ -6,8 +6,8 @@ $('.nav_menu li').hover(function () {
 
 //for rating system
 
-$('.feedback_rating p').hover(function () {
-    $(this).addClass('fa-star').prevAll().addClass('fa-star');
+$('.feedback_rating p').click(function () {
+    $(this).addClass('fa-star').prevAll().addClass('fa-star').removeClass('fa-star-o');
 });
 
 
@@ -23,3 +23,8 @@ $('.close_icon').click(function () {
     $(this).hide();
     $('.toggler').show();
 })
+
+
+jQuery('#myModal').on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', '');
+});
