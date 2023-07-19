@@ -11,7 +11,7 @@ $('.feedback_rating p').click(function () {
 });
 
 $('.feedback_rating p').dblclick(function () {
-    $(this).removeClass('fa-star').addClass('fa-star-o').nextAll().removeClass('fa-star').addClass('fa-star-o');
+    $(this).removeClass('fa-star').addClass('fa-star-o').nextAll().removeClass('fa-star');
 });
 
 
@@ -28,6 +28,10 @@ $('.close_icon').click(function () {
     $('.toggler').show();
 })
 
+$('.topscroll').hide();
+$(window).scroll(function () {
+    $('.topscroll').show();
+});
 
 function scrollToTop() {
     $(window).scrollTop(0);
