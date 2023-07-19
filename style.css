@@ -436,6 +436,10 @@ iframe.embed-responsive-item {
         right: unset;
         transform: translateX(-50%);
     }
+
+    .note_text p {
+        width: 100%;
+    }
 }
 
 @media(max-width:500px) {
@@ -451,6 +455,7 @@ iframe.embed-responsive-item {
         width: 300px;
         top: 20%;
     }
+
 }
 
 /* responsive */
