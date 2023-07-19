@@ -10,6 +10,10 @@ $('.feedback_rating p').click(function () {
     $(this).addClass('fa-star').prevAll().addClass('fa-star').removeClass('fa-star-o');
 });
 
+$('.feedback_rating p').dblclick(function () {
+    $(this).removeClass('fa-star').addClass('fa-star-o').nextAll().removeClass('fa-star').addClass('fa-star-o');
+});
+
 
 //for hamburger menu
 $('.close_icon').hide();
@@ -25,6 +29,6 @@ $('.close_icon').click(function () {
 })
 
 
-jQuery('#myModal').on('hidden.bs.modal', function (e) {
-    $('#myModal iframe').attr('src', '');
-});
+function scrollToTop() {
+    $(window).scrollTop(0);
+}
